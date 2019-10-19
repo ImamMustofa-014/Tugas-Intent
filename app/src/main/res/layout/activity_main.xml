@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="239dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="305dp"
+            android:layout_height="227dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"
+            app:srcCompat="@mipmap/kopi" />
+
+        <EditText
+            android:id="@+id/nim"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_marginLeft="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Nim" />
+
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nim"
+            android:layout_marginLeft="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Nama" />
+
+        <EditText
+            android:id="@+id/nilai"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama"
+            android:layout_marginLeft="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Nilai" />
+
+        <Button
+            android:id="@+id/btn_proses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="450dp"
+            android:layout_marginRight="140dp"
+            android:text="PROCES" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
